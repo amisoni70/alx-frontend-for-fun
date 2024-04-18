@@ -1,0 +1,58 @@
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    width: 55px;
+    height: 20px;
+    margin: 20px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.toggle-label::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    top: -6px;
+    left: -1px;
+    transition: all 0.3s;
+    border: 1px solid lightgray;
+}
+  
+.toggle-inner {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica;
+    font-size: 0.8rem;
+}
+  
+.toggle-inner::before {
+    content: "Yes";
+    color: white;
+    padding-left: 5px;
+}
+  
+.toggle-inner::after::before {
+    color: #c3c3c3;
+}
+  
+.toggle-inner::after {
+    content: "No";
+    color: #c3c3c3;
+    padding-left: 6px;
+}
+
+.toggle-cb:checked + .toggle-label {
+    background-color: #d73953;
+}
+  
+.toggle-cb:checked + .toggle-label::after {
+    left: 33px;
+}
+
+.toggle-cb {
+    display: none;
+}
