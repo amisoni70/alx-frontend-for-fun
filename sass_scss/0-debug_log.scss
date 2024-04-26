@@ -1,0 +1,4 @@
+/* A sass file that prints Hello world in the debug console */
+
+$debug: "Hello world";
+@debug $debug;
