@@ -1,0 +1,19 @@
+/* Margin Mixin */
+
+@mixin margin-body($margin-body: 10px) {
+	margin-left: $margin-body;
+	margin-right: $margin-body;
+}
+
+@mixin margin-div($margin-div: 15px) {
+	margin-left: $margin-div;
+	margin-right: $margin-div;
+}
+
+body {
+	@include margin-body;
+}
+
+div {
+	@include margin-div;
+}
